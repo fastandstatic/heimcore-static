@@ -8,9 +8,6 @@ Allow from all
 </FilesMatch>
 <IfModule mod_rewrite.c>
 RewriteEngine On
-# Redirección de /aranda a nueva URL
-RewriteCond %{REQUEST_URI} ^/aranda/?$ [NC]
-RewriteRule ^.*$ https://heimcore.arandasoft.com/asmscustomer/index.html#/ [R=301,L]
 RewriteBase /
 RewriteRule ^index.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
